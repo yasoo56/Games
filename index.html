@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="bg d-flex justify-content-center align-items-center position-fixed top-0 start-0 end-0 bottom-0 z-3">
+      <span class="loader "></span>
+    </div>
+    <section class="home">
+        
+        <header>
+            <img src="images/wraper.png" class="w-100" alt="bacground Photo">
+        </header>
+
+        <nav class="navbar navbar-expand-lg position-sticky z-2 top-0 mx-auto">
+            <div class="container-fluid">
+              <h5 class="text-white fw-bold mt-2">
+                <img src="images/logo-sm.png"  alt="Logo Photo">
+             GAME REVIEWS
+              </h5>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-white active" aria-current="page" data-type="mmorpg" href="#">MMORPG</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" data-type="shooter" href="#">SHOOTER</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" data-type="sailing" href="#">SAILING</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" data-type="permadeath" href="#">PERMADEATH</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" data-type="superhero" href="#">SUPERHERO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" data-type="pixel" href="#">PIXEL</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        <div class="container mt-4">
+            <div id="data" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4  bg-transparent">
+            </div>
+        </div>
+    </section>    
+    <section class="details d-none">
+        <div class="container">
+            <header class="d-flex justify-content-between py-4">
+                <h3 class="text-white">Details Game</h3>
+                <button class="btn-close btn-close-white" id="btnClose"></button>
+            </header>
+            <div class="row g-4" id="detailes">
+            </div>
+        </div>
+    </section>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
